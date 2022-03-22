@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    margin: 110px 0;
+    width: 75vw;
+}
+
+.header-title {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.header-title>div {
+    width: 50%;
+}
+
+.header-title h1 {
+    font-size: 36px;
+    font-family: 'PT Serif';
+    font-weight: 700;
+}
+
+.introduction {
+    font-family: 'Poppins';
+    size: 18px;
+}
+
+.introduction h2 {
+    font-weight: 600;
+}
+
+.introduction p {
+    font-weight: 400;
+}
+
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galery div:nth-child(3n-1) {
+    margin-top: 85px;
+}
+
+.profile {
+    width: 300px;
+    height: 400px;
+}
+
+.photo {
+    width: 100%;
+    position: relative;
+}
+
+.photo img {
+    width: 238px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.photo .ocupation {
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 15px 15px;
+    width: 100%;
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.profile .name {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media (max-width: 1199px) {
+    .galery div:nth-child(3n-1) {
+        margin-top: 0;
+    }
+
+    .galery div:nth-child(2n) {
+        margin-top: 85px;
+    }
+
+    main {
+        margin: 70px 0;
+        width: 90vw;
+    }
+    
+    .header-title {
+        flex-wrap: wrap;
+    }
+
+    .header-title>div {
+        width: 100%;
+    }
+    .galery{
+        justify-content: space-evenly;
+    }
+    .profile {
+        width: 40vw;
+        height: auto;
+    }
+
+    .photo {
+        width: 90%;
+        position: relative;
+    }
+
+    .photo img {
+        width: 35vw;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    .photo .ocupation{
+        transform-origin: 10px 10px ;
+    }
+
+}
